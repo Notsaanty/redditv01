@@ -5,4 +5,10 @@
         "client_id": "id_cliente_1",
         "client_secret": "secreto_cliente_1"
     }
+    {
+        "username": "usuario2",
+        "password": "contrase\u002f1a1",
+        "client_id": "id_cliente_2",
+        "client_secret": "secreto_cliente_2"
+    }
 ]
