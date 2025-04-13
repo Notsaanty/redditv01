@@ -1,0 +1,8 @@
+[
+    {
+        "username": "usuario1",
+        "password": "contrase\u00f1a1",
+        "client_id": "id_cliente_1",
+        "client_secret": "secreto_cliente_1"
+    }
+]

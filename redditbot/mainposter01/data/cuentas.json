@@ -1,0 +1,20 @@
+[
+    {
+        "username": "usuario1",
+        "password": "pass1",
+        "client_id": "id1",
+        "client_secret": "secret1"
+    },
+    {
+        "username": "usuario2",
+        "password": "pass2",
+        "client_id": "id2",
+        "client_secret": "secret2"
+    },
+    {
+        "username": "usuario3",
+        "password": "pass3",
+        "client_id": "id3",
+        "client_secret": "secret3"
+    }
+]

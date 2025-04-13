@@ -1,0 +1,3 @@
+Labura con una lista de user agents para cambiar la huella digital, se le pueden agregar y elegira de forma random
+ahora tiene un tiempo de espera entre cada accion para ser humano
+falta: actualizar para que en vez de que cada tanda dure 57m deberia durar 30

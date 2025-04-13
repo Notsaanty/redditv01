@@ -1,0 +1,36 @@
+Aquí te dejo una explicación simple y por puntos de lo que hace el script hasta ahora:
+
+1. **Crear Archivos Base**:
+   - El script verifica si existen tres archivos clave (`cuentas.json`, `posts.csv`, y `config.json`), y si no existen, los crea con valores predeterminados.
+     - **`cuentas.json`**: Contiene una lista de cuentas con ejemplos que puedes reemplazar.
+     - **`posts.csv`**: Contiene los posts con un formato de ejemplo (subreddit, título, imagen).
+     - **`config.json`**: Contiene los horarios programados para publicar (por defecto, 08:00, 14:00, 20:00).
+
+2. **Leer Archivos**:
+   - El script tiene funciones para cargar los datos de los archivos JSON y CSV en memoria.
+     - **`cargar_json`**: Carga el contenido de los archivos JSON.
+     - **`leer_posts_csv`**: Lee el archivo CSV con los posts que se van a publicar.
+
+3. **Función de Espera**:
+   - Tiene una función **`esperar_hasta`** que hace que el script espere hasta un horario específico antes de continuar. Usa el horario programado desde el archivo `config.json`.
+
+4. **Elegir Hora de Publicación**:
+   - La función **`obtener_proximo_horario`** determina cuál es el siguiente horario de publicación, basándose en los valores de `config.json`.
+
+5. **Generar Logs**:
+   - Todo lo que sucede en el script se registra en un archivo de logs, **`logs.txt`**, para que puedas seguir lo que se hace durante la ejecución.
+
+6. **Publicación de Posts**:
+   - Se simula la publicación de 5 posts por cuenta (con una espera aleatoria entre 1 y 7 minutos entre cada publicación).
+   - El script simula el proceso de "publicar" (sin conectar con Reddit aún) e imprime un mensaje para cada publicación exitosa.
+
+7. **Control de IP**:
+   - Después de cada cuenta, pide que cambies la IP (esto es útil cuando implementes múltiples cuentas y tengas que evitar que Reddit bloquee las publicaciones debido a la IP).
+
+8. **Tandas Programadas vs Manual**:
+   - El script te da la opción de elegir entre trabajar con las "tandas programadas" (de acuerdo con los horarios en `config.json`) o ejecutar una "tanda manual" donde las publicaciones se hacen inmediatamente.
+
+9. **Reinicio de Proceso**:
+   - Si elige la opción de tandas programadas, el script esperará hasta el próximo horario, y después procederá a ejecutar las publicaciones por cuenta, repitiendo el ciclo.
+
+En resumen, este script crea archivos base con ejemplos, lee los datos de esos archivos, publica posts simulados con tiempos de espera entre publicaciones, y te da la opción de ejecutarlo automáticamente o de forma manual. Está listo para ser modificado y adaptado para integrarse con Reddit más adelante.

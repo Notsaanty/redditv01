@@ -1,0 +1,3 @@
+versio de prueba con fs, adelanta procesos, pero en esta version y en la 03 comun 
+una vez que pide el cambio de ip dice que esperar hasta el sigueinte proceso programado
+no dice cual es en que horario y no se puede adelatar con fs

@@ -1,0 +1,9 @@
+actualicé el código para que cada tanda de 5 publicaciones por cuenta dure 30 minutos en total (en lugar de 57). Al finalizar cada tanda, el script ahora:
+
+Calcula cuánto tiempo tomó esa tanda.
+
+Muestra cuántos minutos faltan para completar los 30 minutos.
+
+Espera ese tiempo restante antes de pedir el cambio de IP.
+
+Muestra un mensaje claro para cambiar la IP antes de continuar con la siguiente cuenta.
